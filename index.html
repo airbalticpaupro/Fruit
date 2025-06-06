@@ -1,11 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>FOODMARKET</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-image: url('images/v1_2.png'); /* замените на путь к фоновому изображению */
+      background-size: cover;
+      text-align: center;
+      padding: 100px 20px 40px;
+      color: #38a169;
+      font-size: 60px;
+      font-weight: bold;
+    }
+    .section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .catalog {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .catalog img {
+      height: 40px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+    .prices {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .price-item {
+      width: 200px;
+      margin: 5px 20px 5px 0;
+    }
+    .button {
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 12px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .basket {
+      float: right;
+      text-align: center;
+    }
+    .basket img {
+      width: 60px;
+    }
+    .employee-section {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .employee-section img {
+      width: 150px;
+      margin-right: 20px;
+    }
+    .footer {
+      background: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .thank-you {
+      background-image: url('images/v4_7.png'); /* замените на путь */
+      background-size: cover;
+      color: yellow;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 80px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <img src="Group 1.png" alt="">
+
+<header>
+  FOODMARKET
+</header>
+
+<div class="section">
+  <div class="catalog">
+    <h2>Каталог товаров</h2>
+    <p>Яблоки – один из самых распространённых и любимых фруктов. <img src="images/v7_8.png"></p>
+    <p>Бананы – доступны круглый год и легко переносятся. <img src="images/v11_29.png"></p>
+    <p>Апельсины – источник витамина C и отличное настроение. <img src="images/apelsin.png"></p>
+    <p>Груши, виноград, клубника, черника и другие…</p>
+  </div>
+
+  <h2>Цены</h2>
+  <div class="prices">
+    <div class="price-item">Яблоки – 25₽ <button class="button">Добавить</button></div>
+    <div class="price-item">Бананы – 18₽ <button class="button">Добавить</button></div>
+    <div class="price-item">Апельсины – 16₽ <button class="button">Добавить</button></div>
+    <div class="price-item">Груши – 15₽ <button class="button">Добавить</button></div>
+    <div class="price-item">Клубника – 40₽ <button class="button">Добавить</button></div>
+    <div class="price-item">Черника – 38₽ <button class="button">Добавить</button></div>
+    <div class="price-item">Дыни – 26₽ <button class="button">Добавить</button></div>
+    <!-- Добавьте остальные -->
+  </div>
+
+  <div class="basket">
+    <p>Корзина</p>
+    <img src="images/v7_23.png" alt="Корзина">
+    <p>1 товар</p>
+  </div>
+
+  <h2>Сотрудники</h2>
+  <div class="employee-section">
+    <img src="images/v11_22.png">
+    <p>Татьяна Барышникова, опыт 15 лет, выкладывает фрукты на прилавок.</p>
+  </div>
+  <div class="employee-section">
+    <img src="images/v11_20.png">
+    <p>Игорь Иванов, сортировщик на складе, 7 лет опыта.</p>
+  </div>
+  <div class="employee-section">
+    <img src="images/v11_18.png">
+    <p>Лидия Вишнёвая, кассир с опытом 12 лет.</p>
+  </div>
+</div>
+
+<div class="footer">
+  Наши контакты: <br>
+  Телефон: 55773735 <br>
+  Почта: fruktovayaraduga@gmail.com
+</div>
+
+<div class="thank-you">
+  Спасибо за покупку!
+</div>
+
 </body>
 </html>
